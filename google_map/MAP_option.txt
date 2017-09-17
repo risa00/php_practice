@@ -1,0 +1,15 @@
+﻿/*オプションのマーカーと吹き出し*/
+
+ var obj={
+    position:new google.maps.LatLng(＊位置情報＊),
+    map:map
+  };
+  var marker=new google.maps.Marker(obj);
+  
+  var info=new google.maps.InfoWindow({
+	content:'＊画像やコメントを記述する＊'});
+  info.open(map,marker);
+  
+  google.maps.event.addListener(marker,'click',function(){
+    info.open(map,marker);
+  });

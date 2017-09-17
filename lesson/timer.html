@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>タイマー</title>
+		<style>
+			body {background-color: gray;}
+			#timer {width: 80%;
+				height: 100px;
+				margin: auto;
+				padding:10px 5%;
+				background: lavender;
+				border: 4px palevioletred solid;
+				text-align: center;
+				font-size: 36px;
+			}
+		</style>
+		<script type="text/javascript">
+			function clock(){
+			dd = new Date();
+			document.a.b.value = dd.toLocaleString();
+ 			window.setTimeout("clock()", 1000);
+}
+
+		</script>
+</head>
+	<body onload ="clock()">
+		<form name ="a" >
+			<input type="text" name="b" id = "timer">
+		</form>
+
+	</body>
+</html>

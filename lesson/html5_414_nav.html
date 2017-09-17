@@ -1,0 +1,200 @@
+﻿<!DOCTYPE>
+<html lang="ja">
+<head>
+	<meta http-equive="Content-Type" content="text/html; charset="utf-8"/>
+	<meta charset="utf-8">
+	<title>HTML演習１</title>
+	<script>
+
+	</script>
+	<style>
+		/* リセットcss*/
+		*{
+
+		margin:0px;
+		padding:0px;
+		}
+
+		body{ background-color:#535353; }
+		#page{ width:920px;
+
+		       margin:10px auto;
+		       padding:10px 30px;
+		       background:lavender;
+		}
+
+		/*--角丸--*/
+		section#b1{
+			width:500px; height:80px;
+			background:#0000cd;
+			border-radius:50px;
+		}
+
+		/*--opacity--*/
+		section#b2{
+			width:500px; height:80px;
+			background:#cc0000;
+			opacity:0.5;
+		}
+
+		/*--rgba--*/
+		section#b3{
+			width:500px; height:80px;
+			background:rgba(255, 0, 255, 0.2);
+
+		}
+		/*--boxshadow--*/
+		section#b4{
+			width:500px; height:80px;
+			background:#ffdead;
+			box-shadow:5px 5px 5px #a0522d,
+			5px 5px 10px #a0522d,
+			5px 5px 20px #a0522d;
+			margin:20px 0px;
+		}
+
+		/*--texthadow--*/
+		h1#b5{
+			color:#000080;
+			text-shadow:10px 5px 10px #778899;
+			margin:20px 0px;
+		}
+
+		/*--アニメーション--*/
+		section#a1{
+			width:100px; height:80px;
+			background:#0000ff;
+			transition:10s linear;
+
+			/*---webkit-transition:2s linear;
+			-moz-transition:2s linear;
+			-o-transition:2s linear;
+			-ms-transition:2s linear;--*/
+		}
+		section#a1:hover{
+			width:800px;
+			background:#0000ff;
+		}
+
+		section#a2{
+			width:400px; height:180px;
+			background:#AAA;
+			transition:3s ease-in;
+			color:#fff;
+			text-align:center;
+			line-height:180px;
+			font-size:4em;
+
+		}
+		section#a2:hover{
+			background:#000;
+			text-shadow:0px 0px 2px #ff00ff,
+			10px 0px 4px green,
+			10px 0px 6px #ff00ff,
+			10px 0px 100px blue,
+			0px 0px 200px blue,
+			0px 0px 40px #ff00ff;
+		}
+
+		nav {
+			background:#696969;
+			width:860px; height:50px;
+			margin:auto;
+		}
+		ul{
+			width:auto; height:50px;
+			text-align:center;
+
+		}
+
+		li{
+			width:150px; height:40px;
+			list-style-type:none;
+			float:left;
+			margin-right:15px;
+			margin-top:5px;
+		}
+
+		li:first-child{
+			margin-left:25px;
+		}
+		li:last-child{
+			margin-right:0px;
+		}
+
+		nav ul li a {
+			background:#87ceeb;
+			text-align:center;
+			line-height:40px;
+			text-decoration:none;
+			font-weight:bold;
+			font-size:18px;
+			display:block;
+			border-radius:20px;
+		}
+		a:hover{background:#00cedb;
+			}
+	</style>
+
+
+<body>
+
+
+	<div id="page">
+		<h1>CSS3の新しいプロパティ</h1>
+
+	<h3>グローバルナビ</h3>
+
+		<nav>
+			<ul>
+				<li><a href="#">リンク1</a></li>
+				<li><a href="#">リンク２</a></li>
+				<li><a href="#">リンク３</a></li>
+				<li><a href="#">リンク４</a></li>
+				<li><a href="#">リンク５</a></li>
+			</ul>
+		</nav>
+<br><hr><br>
+
+		<h3>border-radius</h3>
+	<section id="b1">
+
+	</section>
+<br><hr><br>
+
+	<section id="b2">
+		<h3>全体が半透明</h3>
+	</section>
+<br><hr><br>
+
+	<section id="b3">
+		<h3>背景のみ半透明</h3>
+	</section>
+<br><hr><br>
+
+	<section id="b4">
+		<h3>box-shadow</h3>
+	</section>
+<br><hr><br>
+
+	<h3>テキストシャドウ</h3>
+	<h1 id="b5">hello shibuya</h1>
+<br><hr><br>
+
+	<h3>cssアニメーション(transition)</h3>
+	<section id="a1">
+	</section>
+
+<br><hr><br>
+
+	<h3>cssアニメーション</h3>
+	<section id="a2">
+		<h2>hello</h2>
+	</section>
+
+	</div><!--page-->
+
+
+</body>
+
+</html>

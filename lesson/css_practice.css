@@ -1,0 +1,61 @@
+*{ margin: 0px; padding:0px;
+}
+
+body{ background:gainsboro;
+}
+
+.wrap{ width: 90%; height: auto;
+      background: seashell;
+      margin:10px auto;
+      padding: 10px 2%;
+}
+
+header{ width:95%; height:110px;
+  background: thistle;
+  margin: 0px auto;
+  padding:5px 2%;
+}
+
+.nav1{ width:70%; height:32px;
+  background: salmon;
+  margin-bottom: 2px;
+}
+
+ul{ width: auto;
+height:auto;
+}
+
+.nav1 li{ float:left;
+    list-style-type: none;
+    height:28px; width:20%;
+    background: wheat;
+    margin:2px 3% 2px 0px;
+    border-radius: 5px;
+
+}
+
+li:first-child{margin-left: 5%;}
+
+.nav1 ul li a {
+  text-align: center;
+  line-height: 30px;
+  text-decoration: none;
+  display: block;
+  border-radius: 5px;
+
+}
+
+a:hover{ background: burlywood}
+
+.nav2{ width:70%; height:70px;
+  background: salmon;
+}
+
+.nav2 li{
+  float: left;
+  list-style-type: none;
+  background: wheat;
+  width: 20%;
+  height:66px;
+  margin:2px
+}

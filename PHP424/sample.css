@@ -1,0 +1,55 @@
+@CHARSET "UTF-8";
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: #535353;
+}
+
+#page {
+	width: 80%;
+	height: auto;
+	margin: 20px auto;
+	padding: 20px 5%;
+	background: lavender;
+	border-radius: 5px;
+}
+
+h1, h2, h3, h4, h5, p {
+	font-family: "メイリオ", Meiryo;
+	font-weight: 300;
+	line-height: 1.5;
+}
+
+input#submit {
+	background: wheat;
+	width: 95px;
+	height: 28px;
+	border-radius: 5px;
+	color:black;
+	font-weight:bold;
+
+}
+
+input#submit:hover{background:tan;
+	border-radius: 5px;
+}
+
+input#reset{
+	width: 95px;
+	height: 28px;
+	border-radius: 5px;
+	font-weight:bold;
+	font-family: "メイリオ", Meiryo;
+}
+
+input#reset:hover{background:silver;
+	border-radius: 5px;
+	font-family: "メイリオ", Meiryo;
+}
+
+.caution{
+	color: red;
+}

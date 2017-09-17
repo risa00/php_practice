@@ -1,0 +1,154 @@
+<!DOCTYPE>
+<html lang="ja">
+<head>
+	<meta http-equive="Content-Type" content="text/html; charset="utf-8"/>
+	<meta charset="utf-8">
+	<title>JS基礎</title>
+
+	<style>
+		/* リセットcss*/
+		*{
+		margin:0px;
+		padding:0px;
+		}
+
+		body{ background-color:#535353; }
+		#page{ width:920px;
+		       margin:10px auto;
+		       padding:10px 30px;
+		       background:lavender;
+		}
+
+
+	</style>
+
+
+<body onLoad = "time()">
+
+
+	<div id="page">
+	    <h1>JSの学習</h1>
+		<h3>イベントハンドラ</h3>
+		onclick:<input type="button" value=" yahoo.jp " onClick="location.href='https://www.yahoo.co.jp'">
+		<br>
+		<input type="button" value=" ここをクリック "
+		 onclick="alert('ボタンを押したら表示します')">
+		<a href="#" onclick="alert('クリックされました')">ここをクリック</a>
+
+<br><hr><br>
+
+		onMouseOver: onMouseOut:<br>
+		<img src="img/animal.jpg" width="400px"
+		 onMouseOver="this.src='img/animal2.jpg'" onMouseOut="this.src='img/animal.jpg'" alt="マウスでの画像切り替え">
+
+<br><hr><br>
+		<h3>JSの処理と表示</h3>
+		document.write()の利用<br>
+		<script>
+			document.write( "5+5=", 5+5 , "<br>");
+			document.write( "237×189=", 237*189 , "<br>");
+			document.write( "237÷189=", 237/189 , "<br>");
+			document.write( "5+5×2=", 5+5*2 , "<br>");
+		</script>
+
+<br><hr><br>
+		<h3>変数の学習</h3>
+		<script>
+			var kazu = 10;
+			document.write(kazu);
+			kazu2 = 5;
+			document.write("<br>", kazu * kazu2);
+		</script>
+
+<br><hr><br>
+		<h3>変数の配列</h3>
+		<script>
+			fruits = ["apple", "banana", "cherry", "peach"];
+			document.write(fruits[2]);
+			document.write("<br>");
+			i = Math.floor(Math.random() * 4);
+			document.write(fruits[i]);
+
+		</script>
+
+<br><hr><br>
+		<h3>条件分岐 if</h3>
+		<script>
+			age = 20;
+			if (age < 20) {document.write(age + "才は未成年です");
+			}else{document.write(age + "才は成人です" +"<br>");}
+
+			size = ["s", "m", "l"];
+			size1 = size[1];
+			if(size1 == "s"){document.write(size[0] + "サイズです");
+			}else if(size1 == "m"){document.write(size[1] + "サイズです");
+			}else{document.write(size[2] + "サイズです");}
+		</script>
+
+<br><hr><br>
+		<h3>繰り返し処理 ループ文</h3>
+			変数＝0;(基礎数)
+			while(ループ条件){実行文 変数++; (加算)}<br>
+		<script>
+			n = 0;
+			while (n <= 10){document.write(n, " "); n++;}
+		</script>
+<br><br>
+			for(条件基礎数; ループ条件; 加算処理) {実行}<br>
+		<script>
+			for(o = 1; o <= 20; o++) {document.write(o, " ");}
+		</script>
+<br><br>
+		<script>
+			colors = ["red", "green", "yellow", "pink", "blue", "white"];
+			for(r = 0; r < 6; r++) {document.write(colors[r], " ");}
+		</script>
+<br><br>
+		<script>
+			colors = ["red", "green", "yellow", "pink", "blue", "white"];
+			n = 0;
+			while(n < 4) {document.write(colors[n], " "); n++;}
+		</script>
+<br><hr><br>
+		<h3>Date関数</h3>
+		<script>
+			time = new Date();
+			Y = time.getFullYear();//西暦4桁
+			M = time.getMonth() + 1;
+			D = time.getDate();//日付
+			W = time.getDay();//曜日を0～1で呼び出す
+			week = ["日", "月", "火", "水", "木", "金", "土"];
+			document.write(Y, "年", M, "月", D, "日", week[W], "曜日", "<br>");
+
+			now = new Date();
+			H = now.getHours();
+			m = now.getMinutes();
+			s = now.getSeconds();
+			document.write(H, "時", m, "分", s, "秒");
+		</script>
+<br><hr><br>
+		<h3>自己定義関数</h3>
+		デジタルクロックを作る
+		<script>
+			function time(){
+			dd = new Date();
+			document.F1.T1. value= dd.toLocaleString();
+			window.setTimeout("time()", 1000);
+			}
+		</script>
+		<style>
+			#clock{width:500px; padding:20px 30px;
+			       border:3px solid #666;
+			       font-size: 36px;
+			}
+		</style>
+			<form name="F1">
+				<input type="text" name="T1" size="50"  id="clock">
+			</form>
+
+	</div><!--page-->
+
+
+</body>
+
+</html>
