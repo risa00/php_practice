@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.min.css" rel="stylesheet" media="screen"/>
+  <title>Materialize</title>
+</head>
+<body class="light-green">
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 offset-l3 l6">
+
+          <div class="card-panel">
+            <h4>アンケート</h4>
+            <form action="#">
+              <h5>Q.1</h5>
+              <p>お名前を入力してください。</p>
+              <div class="input-field">
+                <input name="name" type="text" id="name" />
+                <label for="name">お名前</label>
+              </div>
+              <h5>Q.2</h5>
+              <p>プログラミングに興味はありますか？</p>
+              <div>
+                <input type="radio" name="fruit" id="interest">
+                <label for="interest">興味がある</label>
+              </div>
+              <div>
+                <input type="radio" name="fruit" id="no interest">
+                <label for="no interest">興味がない</label>
+              </div>
+              <h5>Q.3</h5>
+              <p>興味のあるプログラミング言語を選択してください。</p>
+              <div>
+                <input type="checkbox" name="choose" id="php">
+                <label for="php">PHP</label>
+              </div>
+              <div>
+                <input type="checkbox" name="choose" id="ruby">
+                <label for="ruby">Ruby</label>
+              </div>
+              <div>
+                <input type="checkbox" name="choose" id="javascript">
+                <label for="javascript">JavaScript</label>
+              </div>
+              <br>
+              <div>
+                <input type="submit" class="btn" value="送信する">
+              </div>
+
+
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+
+</body>
+</html>

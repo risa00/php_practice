@@ -1,0 +1,7 @@
+.itc-jumbotron{
+  padding: 160px 0;
+  background-image: url("top.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
