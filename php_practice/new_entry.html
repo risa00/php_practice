@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.min.css" rel="stylesheet" media="screen"/>
+  <link href="css/style.css" rel="stylesheet" media="screen"/>
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <title>Wolrd Ceramic Studio</title>
+</head>
+<body>
+
+  <div class="navbar-fixed">
+    <nav class="teal darken-2">
+      <div class="nav-wrapper">
+        <a class="brand-logo center" href="works.php">Wolrd Ceramic Studio</a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="row container">
+    <h4>新規登録</h4>
+    <div class="row">
+      <form action="new_entry_post.php" method="post">
+        <div class="input-field col s12 m6 l6">
+          <i class="material-icons prefix">account_circle</i>
+          <input name="userID" type="text" class="validate">
+          <label for="userID">userID</label>
+        </div>
+        <div class="input-field col s12 m6 l6">
+          <i class="material-icons prefix">email</i>
+          <input name="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+        <div class="input-field col s12 m6 l6">
+          <i class="material-icons prefix">lock</i>
+          <input name="password" type="password" class="validate">
+          <label for="password">Password</label>
+        </div>
+        <br>
+        <div class="row">
+          <div class="center col s12">
+            <input type="submit" value="新規登録" class="btn red lighten-2 waves-effect waves-light">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="page-footer grey lighten-4">
+    <p class="center">
+      Wolrd Ceramic Studio</p>
+      <p class="center">
+        世界で唯一の陶芸作品を手に入れる</p>
+        <div class="footer-copyright center lighten-3">
+          © 2016 Wolrd Ceramic Studio
+        </div>
+  </footer>
+
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript">
+      $(document).ready(function(){
+        $(".button-collapse").sideNav();
+        $('.parallax').parallax();
+      });
+      </script>
+    </body>
+    </html>

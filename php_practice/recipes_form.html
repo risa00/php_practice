@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <title>動物占い</title>
+</head>
+<body>
+
+<div class="container" style="margin-top: 20px">
+  <div class="well">
+    <h1>日々のレシピメモ</h1>
+      <form class="" action="index_controller.php" method="get">
+        <div class="row">
+        <div class="form-group col-xs-6">
+          <label>料理タイトル</label>
+          <input type="text" name="userID" class="form-control input-sm"  placeholder="鶏肉とキャベツを蒸したやつ">
+        </div>
+        </div>
+        <div class="row">
+        <div class="form-group col-xs-6">
+          <label>材料</label>
+          <input type="password" name="password" class="form-control input-sm"  placeholder="鶏肉/お塩少々/にんにく少し/コンソメ少し/キャベツたくさん">
+        </div>
+        </div>
+        <div class="row">
+        <div class="form-group col-xs-6">
+          <label>調理方法</label>
+          <input type="password" name="password" class="form-control input-sm"  placeholder="1タッパにキャベツと鶏肉を入れる">
+        </div>
+        </div>
+        <div class="row">
+        <div class="form-group col-xs-6">
+          <label>出来栄え</label>
+          <select class="" name="dekibae">
+            <option value="good">文句なし</option>
+            <option value="bad">改善の余地あり</option>
+          </select>
+        </div>
+        </div>
+        <div class="row">
+        <div class="form-group col-xs-6">
+          <label>おいしくするコツ / 次回に向けてのアドバイス</label>
+          <input type="password" name="password" class="form-control input-sm"  placeholder="味がうすい。コンソメを小さじ１入れるべき">
+        </div>
+        </div>
+        <div class="row">
+          <button type="submit" class="btn btn-primary btn-sm center-block">レシピを保存する！</button>
+        </div>
+      <hr>
+        <div class="row">
+        <button type="button" class="btn btn-link"><a href="form.html">一覧へ戻る</a></button>
+        </div>
+      </form>
+  </div>
+</div>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>
