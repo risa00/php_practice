@@ -72,3 +72,4 @@ class ItemOrder(TestWebdriver):
 
 if __name__ == "__main__":
     unittest.main()
+#http://news.mynavi.jp/series/python/025/
